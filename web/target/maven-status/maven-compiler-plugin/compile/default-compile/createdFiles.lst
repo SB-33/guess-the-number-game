@@ -1,0 +1,8 @@
+com\sexybeast\controller\GameController.class
+com\sexybeast\service\GameServiceImpl.class
+com\sexybeast\WebMain.class
+com\sexybeast\utils\GameMappings.class
+com\sexybeast\utils\AttributeNames.class
+com\sexybeast\utils\ViewNames.class
+com\sexybeast\config\WebConfig.class
+com\sexybeast\service\GameService.class

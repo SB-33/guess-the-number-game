@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess the Number Game</title>
+</head>
+<body>
+<div align="center">
+    <h1>Guess The Number Game</h1>
+    <h2>Game Over</h2>
+    <h3 th:text="${__${T(com.sexybeast.utils.AttributeNames).RESULT_MESSAGE}__}">
+        Result message Content
+    </h3>
+    <h3>
+        <a th:href="@{__${T(com.sexybeast.utils.GameMappings).RESTART}__}">
+            Play again
+        </a>
+    </h3>
+    <h3>
+        <a th:href="@{__${T(com.sexybeast.utils.GameMappings).HOME}__}">
+            Home
+        </a>
+    </h3>
+
+    <footer>
+        <p>CREATED BY ME</p>
+    </footer>
+</div>
+</body>
+</html>
