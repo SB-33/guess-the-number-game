@@ -1,0 +1,9 @@
+<thlogic>
+    <attr sel="#headId"
+          th:replace="~{fragments/head :: headFragment}"/>
+    <attr sel="#playLinkId"
+          th:href="@{__${T(com.sexybeast.utils.GameMappings).PLAY}__}"/>
+    <attr sel="#footerId"
+          th:replace="~{fragments/footer :: footerFragment}"/>
+
+</thlogic>

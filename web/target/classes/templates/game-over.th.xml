@@ -1,0 +1,13 @@
+<thlogic>
+    <attr sel="#headId"
+          th:replace="~{fragments/head :: headFragment}"/>
+    <attr sel="#game-over"
+          th:text="${__${T(com.sexybeast.utils.AttributeNames).RESULT_MESSAGE}__}"/>
+    <attr sel="#play-again"
+          th:href="@{__${T(com.sexybeast.utils.GameMappings).RESTART}__}"/>
+    <attr sel="#home"
+          th:href="@{__${T(com.sexybeast.utils.GameMappings).HOME}__}"/>
+    <attr sel="#footer"
+          th:replace="~{fragments/footer :: footerFragment}"/>
+
+</thlogic>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/head :: headFragment}">
+<html lang="en">
+<head id="headId">
     <meta charset="UTF-8">
     <title>Guess the Number Game</title>
 </head>
@@ -8,21 +8,21 @@
 <div align="center">
     <h1>Guess The Number Game</h1>
     <h2>Game Over</h2>
-    <h3 th:text="${__${T(com.sexybeast.utils.AttributeNames).RESULT_MESSAGE}__}">
+    <h3 id="game-over">
         Result message Content
     </h3>
     <h3>
-        <a th:href="@{__${T(com.sexybeast.utils.GameMappings).RESTART}__}">
+        <a id="play-again">
             Play again
         </a>
     </h3>
     <h3>
-        <a th:href="@{__${T(com.sexybeast.utils.GameMappings).HOME}__}">
+        <a id="home">
             Home
         </a>
     </h3>
 
-    <div th:replace="~{fragments/footer :: footerFragment}"> footer here </div>
+    <footer id="footer">footer here</footer>
 </div>
 </body>
 </html>

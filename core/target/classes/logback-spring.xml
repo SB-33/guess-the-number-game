@@ -4,6 +4,7 @@
 
     <logger name="com.sexybeast" level="DEBUG"/>
     <logger name="org.springframework" level="INFO"/>
+    <logger name="org.thymeleaf" level="TRACE"/>
 
 
 </configuration>
