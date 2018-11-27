@@ -37,12 +37,18 @@ public class GameController {
 
         return ViewNames.PLAY;
     }
-
-
+    
     @PostMapping(GameMappings.PLAY)
-    public String processMessage(@RequestParam int guess){
-        log.info("guess ={}",guess);
+    public String processMessage(@RequestParam int guess) {
+        log.info("guess ={}", guess);
         gameService.checkGuess(guess);
+        return GameMappings.REDIRECT_PLAY;
+    }
+
+    @GetMapping(GameMappings.RESTART)
+    public String playAgain() {
+        log.info("restarting game");
+        gameService.reset();
         return GameMappings.REDIRECT_PLAY;
     }
 }
